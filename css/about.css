@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+/*main background part*/
+body{
+  font: 15px/1.5 'Raleway';
+  padding:0;
+  margin:0;
+  background: #3b3f3c;
+}
+/*scrolling*/
+html {
+  scroll-behavior: smooth;
+}
+/*upper border part*/
+header{
+  font: 20px/1.5 'Raleway'; /*go corona size*/
+  background: #00ff37;
+  color: #ffffff;  /*go corona*/
+  padding-top: 30px; /*upper border upper height*/
+  min-height: 50px; /*upper border bottom height*/
+  border-bottom: #00ff37 6px solid;
+}
+
+/*home about contact us*/
+header a{
+  color:#000000;  
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px; /*home about size*/
+}
+
+header li{
+  display:inline;
+  padding: 0 20px 0 20px; /*dist bet home about*/
+}
+
+header #branding1{
+  float:center; /*home...position*/
+  margin-left: 130px
+}
+
+header #branding1 h1{
+  margin:0;
+  font-weight:bolder;
+}
+
+header nav{
+  float:right;
+  margin-top:-58px;
+}
+
+header .highlight, header .current a{
+  color:#fff;
+  font-weight:bolder;
+  font-size: 25px; /*home size*/
+}
+
+.highlighted{
+  font-weight:bolder;
+}
+
+/*underline animation*/
+header a {        
+  position: relative;
+}
+
+header a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 60%;
+  height: 1px;
+  opacity: 0;
+  background-color: #ffffff;
+  transform: translate(-50%, 0);
+  transition: all 0.3s ease-in-out;
+}
+header a:hover{
+ color: white;
+}
+header a:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.container{
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.heading {
+  
+  padding: 230px; 
+  text-align: left;
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://cdn.pixabay.com/photo/2019/10/19/16/30/poverty-4561704__340.jpg") ; 
+  margin-top: 10px;
+  background-repeat: no-repeat;
+  background-size: 100vw 700px;
+  color: #00ff37;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  font-weight:300;
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin-bottom: 50px;
+}
+.ngo{
+	margin-top: 10px;
+  white-space: nowrap;
+  margin-left: 100px;
+  text-transform: uppercase;
+  font-family: "Raleway";
+  font-size: 60px;
+ 
+  float: right;
+  margin: 8px 0 0 20px;
+  padding: 4px;
+ 
+ }
+h2{
+	text-align: center;
+  font-size: 50px;
+  color: white;
+}
+ h3{
+	color: rgb(255, 255, 255);
+	font-family: "Times New Roman";
+	font-weight: bolder;
+
+}
+.place{
+	margin-left: 55% ;
+
+}
+.left{
+	margin-left: 55% ;
+}
+
+.fourth{
+	margin-left: 55%;
+}
+p{
+  color: white;
+}
+
+.history{
+	text-align: center;
+	background-color: #00ff37;
+  font-size: 50px;
+	
+	font-weight:bold;
+	border-radius: 15px 15px 15px 15px;
+ 
+}
+
+
+
+
+
+#bottom {  /*mail button*/
+    padding: 15px; /*blue border size*/
+    color: #ffffff;
+    background: #00ff37;
+    border-top: #00ff37 3px solid;
+    min-height: 70px;
+    font-family: "Raleway";
+}
+
+#bottom h1{
+  float:left;
+  color: #fff;
+  font-size: 28px;
+   font-weight: 595;
+}
+
+#bottom form {
+  float:center;
+  
+}
+
+#bottom input[type="email"]{
+  padding:4px;
+  height: 25px;
+  width:250px;
+  padding: 6px 10px;
+  font-family: "Raleway";
+  background: #00ff37;
+  border: solid 2px #fff;
+  color: #fff;
+}
+
+#bottom input[type="email"]:hover{
+  background-color: #fff;
+  color: #00ff37;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #fff;
+}
+
+#bottom input[type="email"]:hover::placeholder{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #00ff37;
+  opacity: 1; /* Firefox */
+}
+
+#bottom input[type="email"]:hover:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+#bottom input[type="email"]:hover::-ms-input-placeholder { /* Microsoft Edge */
+  color: #fff;
+}
+
+.button_1 { /*subscribe button*/
+    font-family: "Raleway";
+    height: 41px;
+    background: #00ff37;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    border-radius: 50px;
+    border: solid 2px #fff;
+}
+
+.button_1:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+#bottomcontainer {
+    padding: 15px;
+    color: #ffffff;
+    background: rgb(255, 255, 255);
+    border-top: rgb(255, 255, 255) 3px solid;
+    min-height: 70px;
+    font-family: "Raleway";
+}
+
+.bottomcontainer{
+  width: 80%;
+  margin: auto;
+}
+
+#bottomcontainer h1{
+  float:left;
+  margin-left: 100px;
+}
+
+#bottomcontainer form {
+  float:right;
+  margin-top:15px;
+  margin-right: 100px;
+}
+
+#bottomcontainer h1{
+  float:left;
+  margin-left: 100px;
+}
+
+#bottomcontainer form {
+  float:right;
+  margin-top:15px;
+  margin-right: 100px;
+}
+
+
+.icons {
+  margin-top: 25px;
+}
+.icons a {
+  display: inline-block;
+  width: 32px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px; /*dist bet icons*/
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
